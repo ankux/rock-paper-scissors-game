@@ -12,23 +12,35 @@ while True:
         print("\tYou and Computer chose the same. It's a Tie!")
     elif player == 'Rock':
         if computer == 'Paper':
+            print("\tPlayer:",player)
+            print("\tComputer:",computer)
             print("\tYou lose!",computer,"covers",player)
             cpu_score+=1
         else:
+            print("\tPlayer:",player)
+            print("\tComputer:",computer)
             print("\tYou win!",player,"smashes",computer)
             player_score+=1
     elif player == 'Paper':
         if computer == 'Scissor':
+            print("\tPlayer:",player)
+            print("\tComputer:",computer)
             print ("\tYou lose!",computer,"cuts",player)
             cpu_score+=1
         else:
+            print("\tPlayer:",player)
+            print("\tComputer:",computer)
             print("\tYou win!",player,"covers",computer)
             player_score+=1
     elif player == 'Scissor':
         if computer == 'Rock':
+            print("\tPlayer:",player)
+            print("\tComputer:",computer)
             print ("\tYou lose!",computer,"smashes",player)
             cpu_score+=1
         else:
+            print("\tPlayer:",player)
+            print("\tComputer:",computer)
             print("\tYou win!",player,"cuts",computer)
             player_score+=1
 
