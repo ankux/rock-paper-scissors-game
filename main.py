@@ -7,10 +7,12 @@ cpu_score = 0
 player_score=0
 
 while True:
+    computer = random.choice(choices)
     player = input("Choose Rock, Paper or Scissor: ").capitalize()
     if player == computer:
         print("\tYou and Computer chose the same. It's a Tie!")
     elif player == 'Rock':
+        computer = random.choice(choices)
         if computer == 'Paper':
             print("\tPlayer:",player)
             print("\tComputer:",computer)
@@ -22,6 +24,7 @@ while True:
             print("\tYou win!",player,"smashes",computer)
             player_score+=1
     elif player == 'Paper':
+        computer = random.choice(choices)
         if computer == 'Scissor':
             print("\tPlayer:",player)
             print("\tComputer:",computer)
@@ -33,6 +36,7 @@ while True:
             print("\tYou win!",player,"covers",computer)
             player_score+=1
     elif player == 'Scissor':
+        computer = random.choice(choices)
         if computer == 'Rock':
             print("\tPlayer:",player)
             print("\tComputer:",computer)
@@ -45,7 +49,7 @@ while True:
             player_score+=1
 
     elif player=='End':
-        print("Final Scores:")
+        print("--------Final Scores--------")
         print(f"\tComputer:{cpu_score}")
         print(f"\tPlayer:{player_score}")
         break
